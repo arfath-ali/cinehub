@@ -1,4 +1,5 @@
 import http, { IncomingMessage, ServerResponse } from 'node:http';
+import { checkDatabaseConnection } from './database/pool.db.js';
 
 const PORT = process.env.PORT;
 
@@ -30,8 +31,11 @@ const server = http.createServer(
   },
 );
 
-server.listen(PORT, () => {
+server.listen(PORT, async () => {
   if (process.env.NODE_ENV === 'development') {
-    console.log(`CineHub is live at: http://localhost:${PORT}`);
+    console.log(`✅ CineHub is live at: http://localhost:${PORT}`);
+  } else {
+    console.log(`✅ CineHub Production Server started on port ${PORT}`);
   }
+  await checkDatabaseConnection();
 });
