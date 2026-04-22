@@ -1,5 +1,8 @@
 import http, { IncomingMessage, ServerResponse } from 'node:http';
 import { checkDatabaseConnection } from './database/pool.db.js';
+import { syncUsersSchema } from './database/users.db.js';
+import { syncAuthTokenSchema } from './database/auth-tokens.db.js';
+import { syncWatchlistSchema } from './database/watchlist.db.js';
 
 const PORT = process.env.PORT;
 
@@ -38,4 +41,7 @@ server.listen(PORT, async () => {
     console.log(`✅ CineHub Production Server started on port ${PORT}`);
   }
   await checkDatabaseConnection();
+  await syncUsersSchema();
+  await syncAuthTokenSchema();
+  await syncWatchlistSchema();
 });
