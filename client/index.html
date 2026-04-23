@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="./dist/styles.css" />
     <script type="module" src="./dist/main.js"></script>
     <link rel="icon" href="./src/assets/images/favicon.png" />
-    <title>CineHub</title>
+    <title>Picturehouse</title>
   </head>
-  <body></body>
+  <body>
+    <header class="px-8 pt-4 pb-2">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-16">
+          <img
+            class="w-[clamp(10rem,8.214rem+8.929vw,16.25rem)] h-auto"
+            src="./src/assets/images/brand.png"
+            alt="Picturehouse Logo"
+          />
+          <nav
+            class="fixed bottom-0 w-full left-0 flex py-4 px-8 items-center justify-between md:static md:gap-16 md:w-auto"
+          >
+            <a href="#">Home</a>
+            <a href="#">Search</a>
+            <a href="#">Watchlist</a>
+          </nav>
+        </div>
+        <img
+          class="w-[clamp(2rem,1.857rem+0.714vw,2.5rem)] h-auto"
+          src="./src/assets/images/profile.png"
+          alt="Profile Logo"
+        />
+      </div>
+    </header>
+  </body>
 </html>
