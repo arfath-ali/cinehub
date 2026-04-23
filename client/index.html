@@ -22,25 +22,27 @@
           <nav
             class="fixed bottom-0 w-full left-0 flex py-4 px-8 items-center justify-between md:static md:gap-16 md:w-auto"
           >
-            <a href="#">Home</a>
-            <a href="#">Search</a>
-            <a href="#">Watchlist</a>
+            <a href="/home">Home</a>
+            <a href="/search">Search</a>
+            <a href="/watchlist">Watchlist</a>
           </nav>
         </div>
-        <img
-          class="w-[clamp(2rem,1.857rem+0.714vw,2.5rem)] h-auto"
-          src="./src/assets/images/profile.png"
-          alt="Profile Icon"
-        />
+        <a href="/profile">
+          <img
+            class="w-[clamp(2rem,1.857rem+0.714vw,2.5rem)] h-auto"
+            src="./src/assets/images/profile.png"
+            alt="Profile Icon"
+          />
+        </a>
       </div>
     </header>
 
     <main class="pb-12">
-      <section class="hidden home:block"></section>
-      <section class="hidden details:block"></section>
-      <section class="hidden search:block"></section>
-      <section class="hidden watchlist:block"></section>
-      <section class="hidden profile:block"></section>
+      <section class="hidden home:block">Home</section>
+      <section class="hidden details:block">Details</section>
+      <section class="hidden search:block">Search</section>
+      <section class="hidden watchlist:block">Watchlist</section>
+      <section class="hidden profile:block">Profile</section>
     </main>
   </body>
 </html>
