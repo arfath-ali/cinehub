@@ -104,14 +104,15 @@
     --color-border-info: var(--color-info-500);
 
     /* text */
-    --color-text-heading: var(--color-neutral-50);
-    --color-text-primary: var(--color-neutral-100);
-    --color-text-secondary: var(--color-neutral-400);
-    --color-text-placeholder: var(--color-neutral-300);
-    --color-text-success: var(--color-success-50);
-    --color-text-error: var(--color-error-50);
-    --color-text-warning: var(--color-warning-50);
-    --color-text-info: var(--color-info-50);
+    --color-heading: var(--color-neutral-50);
+    --color-primary: var(--color-neutral-100);
+    --color-secondary: var(--color-neutral-400);
+    --color-placeholder: var(--color-neutral-300);
+    --color-disabled: var(--color-neutral-500);
+    --color-success: var(--color-success-50);
+    --color-error: var(--color-error-50);
+    --color-warning: var(--color-warning-50);
+    --color-info: var(--color-info-50);
 
     /* brand */
     --color-primary: var(--color-brand-500);
