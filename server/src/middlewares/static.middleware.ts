@@ -6,9 +6,10 @@ import crypto from 'node:crypto';
 const mimeTypes: Record<string, string> = {
   '.css': 'text/css',
   '.js': 'application/javascript',
+  '.map': 'application/json',
   '.png': 'image/png',
   '.svg': 'image/svg+xml',
-  '.woff2': 'font/woff2',
+  '.ttf': 'font/ttf',
   '.json': 'application/json',
 };
 
