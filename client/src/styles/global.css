@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url(../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+    src: url(/src/assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
     font-weight: 100 900;
     font-display: swap;
 }
@@ -53,17 +53,17 @@
     --color-neutral-950: hsl(240 9.5% 8.2%);
 
     /* brand */
-    --color-brand-50: hsl(254.3 84% 95.1%);
-    --color-brand-100: hsl(253.5 80% 90.2%);
-    --color-brand-200: hsl(254.8 81.8% 80.6%);
-    --color-brand-300: hsl(256.9 82.3% 71.2%);
-    --color-brand-400: hsl(261 79.8% 59.2%);
-    --color-brand-500: hsl(263.4 69.3% 42.2%);
-    --color-brand-600: hsl(263 70.6% 34.7%);
-    --color-brand-700: hsl(263.3 74.1% 27.3%);
-    --color-brand-800: hsl(263.4 77.8% 19.4%);
-    --color-brand-900: hsl(262.5 84.8% 12.9%);
-    --color-brand-950: hsl(261 90.9% 8.6%);
+    --color-brand-50: hsl(250.6 81% 95.9%);
+    --color-brand-100: hsl(252.6 82.6% 91%);
+    --color-brand-200: hsl(254.8 82% 82.5%);
+    --color-brand-300: hsl(256.6 82.4% 73.3%);
+    --color-brand-400: hsl(259.2 81.5% 63.9%);
+    --color-brand-500: hsl(263.4 70% 50.4%);
+    --color-brand-600: hsl(263.3 70.3% 41%);
+    --color-brand-700: hsl(263.3 73.4% 31%);
+    --color-brand-800: hsl(263.3 77.6% 22.7%);
+    --color-brand-900: hsl(263 83.3% 14.1%);
+    --color-brand-950: hsl(261.7 88.7% 10.4%);
 
     /* success */
     --color-success-50: hsl(142.1 70.6% 95.3%);
@@ -88,13 +88,14 @@
     /* ---SEMANTIC--- */
 
     /* background */
-    --color-bg-page: var(--color-neutral-950);
-    --color-bg-surface: var(--color-neutral-900);
-    --color-bg-input: var(--color-neutral-800);
-    --color-bg-success: var(--color-success-950);
-    --color-bg-error: var(--color-error-950);
-    --color-bg-warning: var(--color-warning-950);
-    --color-bg-info: var(--color-info-950);
+    --color-page: var(--color-neutral-950);
+    --color-surface: var(--color-neutral-900);
+    --color-header: var(--color-brand-950);
+    --color-input: var(--color-neutral-800);
+    --color-success: var(--color-success-950);
+    --color-error: var(--color-error-950);
+    --color-warning: var(--color-warning-950);
+    --color-info: var(--color-info-950);
 
     /* border */
     --color-border: var(--color-neutral-600);
@@ -145,6 +146,6 @@
         line-height: var(--leading-base);
         letter-spacing: var(--tracking-normal);
         color: var(--color-text-primary);
-        background-color: var(--color-bg-page);
+        background-color: var(--color-page);
     }
 }
