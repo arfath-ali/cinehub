@@ -22,9 +22,14 @@
           <nav
             class="fixed bottom-0 w-full left-0 flex py-4 px-8 items-center justify-between md:static md:gap-16 md:w-auto"
           >
-            <a href="/home">Home</a>
-            <a href="/search">Search</a>
-            <a href="/watchlist">Watchlist</a>
+            <a class="nav-item home:nav-item--active" href="/home">Home</a>
+            <a class="nav-item search:nav-item--active" href="/search">
+              Search
+            </a>
+
+            <a class="nav-item watchlist:nav-item--active" href="/watchlist">
+              Watchlist
+            </a>
           </nav>
         </div>
         <a href="/profile">

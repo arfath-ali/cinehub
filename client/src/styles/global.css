@@ -151,7 +151,22 @@
         font-weight: var(--font-regular);
         line-height: var(--leading-base);
         letter-spacing: var(--tracking-normal);
-        color: var(--color-primary);
+        color: var(--color-body);
         background-color: var(--color-page);
     }
+
+    a {
+        font-weight: var(--font-medium);
+    }
+}
+
+
+@utility nav-item {
+    color: var(--color-disabled);
+    padding-bottom: 4px;
+}
+
+@utility nav-item--active {
+    border-bottom: 4px solid var(--color-primary);
+    color: var(--color-body);
 }
